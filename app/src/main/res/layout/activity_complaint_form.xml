@@ -1,0 +1,159 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/formTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Complaint Form"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"/>
+
+        <EditText
+            android:id="@+id/firstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:hint="FirstName:*"
+            android:background="@drawable/custom_edittext"
+            android:minHeight="48dp"
+            android:padding="20dp"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/lastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:hint="LastName:*"
+            android:background="@drawable/custom_edittext"
+            android:minHeight="48dp"
+            android:padding="20dp"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/ghmcCircleNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:hint="GHMC circle no:*"
+            android:background="@drawable/custom_edittext"
+            android:minHeight="48dp"
+            android:padding="20dp"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/phoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:hint="Phone Number:*"
+            android:background="@drawable/custom_edittext"
+            android:inputType="phone"
+            android:minHeight="48dp"
+            android:padding="20dp"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:hint="Email:*"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/custom_edittext"
+            android:minHeight="48dp"
+            android:padding="20dp"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:hint="Complete Address:*"
+            android:background="@drawable/custom_edittext"
+            android:inputType="textMultiLine"
+            android:maxLines="10"
+            android:minLines="5"
+            android:padding="20dp"
+            android:textColor="#000000"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/landmark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:hint="Land Mark:*"
+            android:background="@drawable/custom_edittext"
+            android:minHeight="48dp"
+            android:padding="20dp"
+            android:textColor="#000000"
+            android:textSize="25sp" />
+
+        <!-- Resizable Problem Description Box -->
+        <EditText
+            android:id="@+id/problemDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Problem Description (Max 200 words):*"
+            android:background="@drawable/custom_edittext"
+            android:inputType="textMultiLine"
+            android:maxLines="10"
+            android:minLines="5"
+            android:padding="20dp"
+            android:textColor="#000000"
+            android:layout_marginBottom="20dp"
+            android:textSize="25sp"/>
+
+        <!-- Button to Upload Photo -->
+        <Button
+            android:id="@+id/uploadPhotoButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Upload Problem Photo"
+            android:textColor="#ffffff"
+            android:background="#3F51B5"
+            android:padding="20dp"
+            android:textSize="18sp"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Displaying the Uploaded Photo -->
+        <ImageView
+            android:id="@+id/uploadedPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="20dp"
+            android:scaleType="centerCrop"
+            android:visibility="gone" /> <!-- Initially hidden, shown after upload -->
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:textColor="#ffffff"
+            android:background="#000000"
+            android:padding="10dp"
+            android:textSize="18sp"/>
+    </LinearLayout>
+</ScrollView>

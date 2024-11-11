@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "510412127174",
+    "project_id": "ghmc-5b170",
+    "storage_bucket": "ghmc-5b170.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:510412127174:android:3c765bceba7ac9cbbe10c7",
+        "android_client_info": {
+          "package_name": "com.example.ghmc"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCTwKc1jq2tGOPoUrkJ-PMyv8jV4kDFzkw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
